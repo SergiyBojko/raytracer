@@ -33,10 +33,10 @@ public class Scene {
 		return (ray) -> {
 			Vec3 direction = ray.getDirection().getUnitVector();
 			double k = direction.get(1);
-			Vec3 yellow = new Vec3(2, 2, 1);
-			Vec3 blue = new Vec3(0.0, 0.1, 0.2);
+			Vec3 yellow = new Vec3(1, 1, 1);
+			Vec3 blue = new Vec3(0.15, 0.15, 0.3);
 			Vec3 color = blue.mult(1-Math.abs(k)).add(yellow.mult(Math.max(-k, 0)));
-			return new Vec3(0);
+			return color;
 		};
 	}
 

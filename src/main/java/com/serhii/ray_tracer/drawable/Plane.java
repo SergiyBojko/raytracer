@@ -6,9 +6,9 @@ import com.serhii.ray_tracer.vector.Ray;
 import com.serhii.ray_tracer.vector.Vec3;
 
 public class Plane implements Hitable{
-	private Vec3 origin;
-	private Vec3 normal;
-	private Material material;
+	protected Vec3 origin;
+	protected Vec3 normal;
+	protected Material material;
 	
 	public Plane(Vec3 origin, Vec3 normal, Material material) {
 		this.origin = origin;
